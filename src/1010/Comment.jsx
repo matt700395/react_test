@@ -33,10 +33,20 @@ const styles = {
 };
 
 function Comment(props) {
-
     return (
-        <div>
-            <h1>댓글창 만들기 첫번째 컴포넌트 입니다.</h1>
+        <div style={styles.wrapper}>
+            <div style={styles.imageContainer}>
+                <img alt =""
+                    src= "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                    style={styles.image} />
+            </div>
+
+            <div style={styles.contentContainer}>
+                <span style={styles.nameText}>{props.name}</span>
+                <span style={styles.commentText}>
+                    {props.comment}
+                </span>
+            </div>
         </div>
     );
 }
