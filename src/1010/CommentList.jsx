@@ -5,7 +5,7 @@ function CommentList(props) {
 
     return (
         <div>
-            <Comment />
+            <Comment comment="첫댓글입니다" />
         </div>
     );
 }
